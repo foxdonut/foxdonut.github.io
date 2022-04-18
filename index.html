@@ -1,12 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <title>foxdonut</title>
+    <meta charset="UTF-8">
+    <title>Meiosis by foxdonut</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <style type="text/css">.page-header a.hl { color: #ffffff; text-decoration: underline; }</style>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@foxdonut00" />
+    <meta name="twitter:title" content="Meiosis: a simple state management pattern" />
+    <meta name="twitter:description" content="Meiosis is not a library. It's a simple pattern to manage state in your web applications. Think Redux, MobX, Cerebral, React Context, etc. but without being tied to a framework API. Instead, just plain functions and objects." />
+    <meta name="twitter:image" content="http://meiosis.js.org/public/images/meiosis-reactive-loop.png" />
+    <meta property="og:title" content="Meiosis: a simple state management pattern"/>
+    <meta property="og:description" content="Meiosis is not a library. It's a simple pattern to manage state in your web applications. Think Redux, MobX, Cerebral, React Context, etc. but without being tied to a framework API. Instead, just plain functions and objects."/>
+    <meta property="og:url" content="http://meiosis.js.org"/>
+    <meta property="og:image" content="http://meiosis.js.org/public/images/meiosis-reactive-loop.png"/>
   </head>
   <body>
-    <h1>foxdonut</h1>
-    <ul>
-      <li><a href="https://foxdonut.github.io/meiosis">meiosis</a></li>
-    </ul>
+    <section class="page-header">
+      <h1 class="project-name">Meiosis</h1>
+      <h2 class="project-tagline">Awesome State Management for Web Applications</h2>
+      <a href="http://meiosis.js.org/docs/toc.html" class="btn">Documentation</a>
+      <a href="http://meiosis.js.org/examples.html" class="btn">Examples</a>
+      <a href="https://meiosis.js.org/tracer" class="btn">Tracer</a>
+      <a href="https://gitter.im/foxdonut/meiosis" class="btn">Gitter Chat</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="meiosis" class="anchor" href="#meiosis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Meiosis</h1>
+
+<blockquote>It's not a library. It's a simple pattern to manage state in your web applications.</blockquote>
+
+<p>Think Redux, MobX, Cerebral, React Context, etc. <strong>but without having library imports everywhere and being tied to a framework API.
+Instead, just plain functions and objects.</strong>
+</p>
+
+<p>All you need is a simple stream library such as
+<a href="https://github.com/paldepind/flyd">Flyd</a> or
+<a href="https://mithril.js.org/stream.html">Mithril Stream</a> <strong>in one place</strong> to implement the pattern.
+<i>You do not need anything else, not even Meiosis itself.</i> <strong>You could even implement the stream yourself with a handful of
+lines of code. Zero dependencies!</strong>
+</p>
+
+<p>
+Easily use the pattern with your favourite view library: React, Preact, Mithril, lit-html, and so on.
+</p>
+
+<!--iframe width="560" height="315" src="https://www.youtube.com/embed/KJSM2uFDzDY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe-->
+
+<h2>Ready to have a closer look?</h2>
+
+<p>&rarr; <a href="http://meiosis.js.org/docs/toc.html">Read the Documentation</a> to learn the pattern.</p>
+<p>&rarr; Don't want to setup Meiosis yourself?
+<a href="https://github.com/foxdonut/meiosis/tree/master/helpers/setup">meiosis-setup</a> is available for
+your convenience. (coming soon)</p>
+
+<h2>Ready for More?</h2>
+
+<ul>
+  <li>Try out more <a href="http://meiosis.js.org/examples.html">examples</a>.</li>
+  <li>Check out the <a href="https://meiosis.js.org/tracer">Meiosis-Tracer</a>.</li>
+  <li>Chat on the <a href="https://gitter.im/foxdonut/meiosis">Gitter channel</a>.</li>
+</ul>
+
+<h2>Why the name <i>Meiosis</i>?</h2>
+
+<p>I picked the name <b>Meiosis</b> for three reasons:</p>
+
+<ol>
+<li>it's a <a href="http://en.wikipedia.org/wiki/Meiosis">biology term</a> for a type of cell division; this is
+an analogy to the idea of dividing your application into smaller pieces;</li>
+<li>it's a <a href="https://en.wikipedia.org/wiki/Meiosis_(figure_of_speech)">figure of speech</a> that
+<i>intentionally understates something or implies that it is lesser in significance or size than it
+really is</i>, meaning that this is meant to be small, humble, and not replace what people use,
+just improve upon it; and</li>
+<li>it's a relatively unique name in the JavaScript world, thus making it easy to find information
+using search engines.</li>
+</ol>
+
+<hr>
+
+<h2>Credits</h2>
+
+<p>
+Meiosis is the result of a whole adventure of exploring other architectures. Credit goes to their authors; I am grateful
+for their work and that of their respective communities.
+</p>
+
+<ul>
+  <li>
+    <a href="http://mithril.js.org">Mithril</a> and its fantastic community. Special thanks to
+    <a href="https://twitter.com/james_a_forbes">James Forbes</a>,
+    <a href="https://github.com/barneycarroll">Barney Carroll</a>,
+    <a href="https://github.com/smuemd">Stefan Thon</a>,
+    <a href="https://github.com/porsager">Rasmus Porsager</a>,
+    <a href="https://github.com/devinivy">Devin Ivy</a>,
+    <a href="https://github.com/CreaturesInUnitards">Scotty Simpson</a>,
+    <a href="https://github.com/fuzetsu">Daniel Loomer</a>,
+    and many others, for all their help, sharing their knowledge, and discussing ideas!
+  </li>
+  <li>
+    <a href="http://www.christianalfoni.com/articles/2016_04_06_CycleJS-driven-by-state">CycleJS driven by state</a>
+    by <a href="http://www.christianalfoni.com/">Christian Alfoni</a>. This article was very inspirational to me and
+    I am very grateful to Christian! I also find Christian's other projects very interesting, including
+    (but not limited to) <a href="http://cerebraljs.com">Cerebral</a> and
+    <a href="https://github.com/cerebral/cerebral/tree/master/packages/function-tree#readme">function-tree</a>.
+  </li>
+  <li>
+    <a href="https://twitter.com/paldepind">Simon Friis Vindum</a>, creator of
+    <a href="https://github.com/paldepind/flyd">Flyd</a>,
+    <a href="https://github.com/snabbdom/snabbdom">Snabbdom</a>, and others.
+    I use Flyd as a stream library for Meiosis.
+  </li>
+  <li>
+    <a href="https://github.com/hyperapp/hyperapp">hyperapp</a>, by
+    <a href="https://twitter.com/jbucaran">Jorge Bucaran</a>.
+  </li>
+</ul>
+
+<hr>
+
+<p>Meiosis is developed by <a href="https://github.com/foxdonut">foxdonut</a>
+(<a href="http://twitter.com/foxdonut00">@foxdonut00</a>) and is released under the MIT license.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/foxdonut/meiosis">Meiosis</a> is maintained by <a href="https://github.com/foxdonut">foxdonut</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a modified version of the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+
   </body>
 </html>

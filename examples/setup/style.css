@@ -1,0 +1,16 @@
+.footer {
+  font-size: 11pt;
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+  height: 40px;
+}
+#tracer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 11px;
+}
+.pe-control.pe-radio-control {
+  margin-right: 32px;
+}
